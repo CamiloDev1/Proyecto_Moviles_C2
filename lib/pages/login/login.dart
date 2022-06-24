@@ -17,7 +17,8 @@ class _LoginState extends State<Login> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        automaticallyImplyLeading: false,
+        backgroundColor: Color.fromARGB(255, 85, 18, 124),
         title: Row(
           children: const [
             Icon(Icons.arrow_back, color: Colors.pinkAccent),
@@ -40,7 +41,7 @@ class _LoginState extends State<Login> {
         padding: const EdgeInsets.only(right: 10, left: 10),
         child: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
                 margin: const EdgeInsets.only(bottom: 60, top: 30),
@@ -56,7 +57,7 @@ class _LoginState extends State<Login> {
               ),
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 0),
-                margin: const EdgeInsets.only(right: 160),
+                margin: const EdgeInsets.only(left: 0, right: 220), //cmbiar
                 child: const Text(
                   'Correo electrónico',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -82,7 +83,7 @@ class _LoginState extends State<Login> {
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                margin: const EdgeInsets.only(right: 230, left: 20),
+                margin: const EdgeInsets.only(right: 265, left: 0),
                 child: const Text(
                   'Contraseña',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -129,7 +130,7 @@ class _LoginState extends State<Login> {
               ),
               const SizedBox(height: 60),
               Container(
-                padding: const EdgeInsets.only(top: 130),
+                padding: const EdgeInsets.only(top: 100),
                 child: SizedBox(
                   width: size.width - 70,
                   height: 50,

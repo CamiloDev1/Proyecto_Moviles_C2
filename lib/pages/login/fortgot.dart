@@ -13,7 +13,8 @@ class _ForgotPasswordState extends State<ForgotPassword> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        automaticallyImplyLeading: false,
+        backgroundColor: Color.fromARGB(255, 85, 18, 124),
         title: Row(
           children: const [
             Icon(Icons.arrow_back, color: Colors.pinkAccent),
@@ -39,7 +40,8 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                margin: const EdgeInsets.only(bottom: 10, top: 30),
+                padding: const EdgeInsets.only(right: 23),
                 child: const Text(
                   'Ingresa tu email para recuperar tu contraseña',
                   textAlign: TextAlign.center,
@@ -52,7 +54,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 15, horizontal: 0),
-                margin: const EdgeInsets.only(right: 175),
+                margin: const EdgeInsets.only(left: 0, right: 230),
                 child: const Text(
                   'Correo electrónico',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -84,7 +86,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               ),
               const SizedBox(height: 35),
               Container(
-                padding: const EdgeInsets.only(top: 260),
+                padding: const EdgeInsets.only(top: 220, left: 10),
                 child: SizedBox(
                   width: size.width - 70,
                   height: 50,

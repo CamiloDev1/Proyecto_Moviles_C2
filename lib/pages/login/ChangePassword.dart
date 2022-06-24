@@ -8,7 +8,8 @@ class ChangePassword extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        automaticallyImplyLeading: false,
+        backgroundColor: Color.fromARGB(255, 85, 18, 124),
         title: Row(
           children: const [
             Icon(Icons.arrow_back, color: Colors.pinkAccent),
@@ -109,8 +110,8 @@ class ChangePassword extends StatelessWidget {
         ),
         const Spacer(),
         Container(
-          height: MediaQuery.of(context).size.height * 0.1,
-          width: MediaQuery.of(context).size.width,
+          height: 85,
+          width: 400,
           padding: const EdgeInsets.fromLTRB(20, 10, 20, 20),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(

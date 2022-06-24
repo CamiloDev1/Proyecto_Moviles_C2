@@ -21,7 +21,8 @@ class _RegisterState extends State<Register> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        automaticallyImplyLeading: false,
+        backgroundColor: Color.fromARGB(255, 81, 16, 119),
         title: Row(
           children: const [
             Icon(Icons.arrow_back, color: Colors.pinkAccent),
@@ -44,13 +45,14 @@ class _RegisterState extends State<Register> {
         padding: const EdgeInsets.only(right: 10, left: 5),
         child: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
+                margin: const EdgeInsets.only(bottom: 15, top: 20),
+                padding: const EdgeInsets.only(right: 23),
                 child: const Text(
                   'Crea una cuenta para empezar a usar la app ',
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.left,
                   style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -60,7 +62,7 @@ class _RegisterState extends State<Register> {
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                margin: const EdgeInsets.only(right: 235),
+                margin: const EdgeInsets.only(left: 0, right: 288),
                 child: const Text(
                   'Nombre',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -86,7 +88,7 @@ class _RegisterState extends State<Register> {
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                margin: const EdgeInsets.only(right: 160),
+                margin: const EdgeInsets.only(right: 220, left: 0),
                 child: const Text(
                   'Correo electronico',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -112,7 +114,7 @@ class _RegisterState extends State<Register> {
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                margin: const EdgeInsets.only(right: 230, left: 20),
+                margin: const EdgeInsets.only(right: 260, left: 0),
                 child: const Text(
                   'Contraseña',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),

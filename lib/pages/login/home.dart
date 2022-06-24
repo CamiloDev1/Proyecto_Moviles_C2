@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                   children: const [
                     Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
                     FaIcon(FontAwesomeIcons.google),
-                    Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
+                    Padding(padding: EdgeInsets.symmetric(horizontal: 17)),
                     Text(
                       'Continuar con Google',
                       style: TextStyle(fontSize: 18),
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                       FontAwesomeIcons.facebookSquare,
                       size: 30,
                     ),
-                    Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
+                    Padding(padding: EdgeInsets.symmetric(horizontal: 15)),
                     Text(
                       'Continuar con Facebook',
                       style: TextStyle(fontSize: 18),
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                       Icons.mail_rounded,
                       color: Color(0xff64686f),
                     ),
-                    Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
+                    Padding(padding: EdgeInsets.symmetric(horizontal: 15)),
                     Text(
                       'Registrarse con e-mail',
                       style: TextStyle(
