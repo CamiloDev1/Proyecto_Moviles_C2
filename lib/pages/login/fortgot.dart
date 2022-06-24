@@ -19,7 +19,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             },
             icon: Icon(Icons.arrow_back, color: Colors.pinkAccent)),
         automaticallyImplyLeading: false,
-        backgroundColor: Color.fromARGB(255, 85, 18, 124),
+        backgroundColor: Color.fromARGB(255, 97, 23, 194),
         title: Row(
           children: const [
             Text('Recuperar Contraseña'),
@@ -44,7 +44,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             children: [
               Container(
                 margin: const EdgeInsets.only(bottom: 10, top: 30),
-                padding: const EdgeInsets.only(right: 23),
+                padding: const EdgeInsets.only(right: 13),
                 child: const Text(
                   'Ingresa tu email para recuperar tu contraseña',
                   textAlign: TextAlign.center,
@@ -57,7 +57,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 15, horizontal: 0),
-                margin: const EdgeInsets.only(left: 0, right: 230),
+                margin: const EdgeInsets.only(left: 0, right: 215),
                 child: const Text(
                   'Correo electrónico',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -87,7 +87,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                   textAlign: TextAlign.justify,
                 ),
               ),
-              const SizedBox(height: 35),
+              const SizedBox(height: 210),
               Container(
                 padding: const EdgeInsets.only(top: 220, left: 10),
                 child: SizedBox(

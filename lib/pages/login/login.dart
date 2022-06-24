@@ -23,7 +23,7 @@ class _LoginState extends State<Login> {
             },
             icon: Icon(Icons.arrow_back, color: Colors.pinkAccent)),
         automaticallyImplyLeading: false,
-        backgroundColor: Color.fromARGB(255, 85, 18, 124),
+        backgroundColor: Color.fromARGB(255, 97, 23, 194),
         title: Row(
           children: const [
             Text('Iniciar sesión'),
@@ -48,19 +48,19 @@ class _LoginState extends State<Login> {
             children: [
               Container(
                 margin: const EdgeInsets.only(bottom: 60, top: 30),
-                padding: const EdgeInsets.only(right: 8),
+                padding: const EdgeInsets.only(right: 30),
                 child: const Text(
                   'Inicia sesión con tu cuenta para continuar',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: Colors.grey),
                 ),
               ),
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 0),
-                margin: const EdgeInsets.only(left: 0, right: 220), //cmbiar
+                margin: const EdgeInsets.only(left: 0, right: 205), //cmbiar
                 child: const Text(
                   'Correo electrónico',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -86,7 +86,7 @@ class _LoginState extends State<Login> {
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                margin: const EdgeInsets.only(right: 265, left: 0),
+                margin: const EdgeInsets.only(right: 250, left: 0),
                 child: const Text(
                   'Contraseña',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -131,7 +131,7 @@ class _LoginState extends State<Login> {
                       {Navigator.pushNamed(context, 'fortgot_password')},
                 ),
               ),
-              const SizedBox(height: 60),
+              const SizedBox(height: 200),
               Container(
                 padding: const EdgeInsets.only(top: 100),
                 child: SizedBox(

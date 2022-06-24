@@ -27,7 +27,7 @@ class _RegisterState extends State<Register> {
             },
             icon: Icon(Icons.arrow_back, color: Colors.pinkAccent)),
         automaticallyImplyLeading: false,
-        backgroundColor: Color.fromARGB(255, 81, 16, 119),
+        backgroundColor: Color.fromARGB(255, 97, 23, 194),
         title: Row(
           children: const [
             Text('Registrate'),
@@ -51,8 +51,8 @@ class _RegisterState extends State<Register> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                margin: const EdgeInsets.only(bottom: 15, top: 20),
-                padding: const EdgeInsets.only(right: 23),
+                margin: const EdgeInsets.only(bottom: 15, top: 40),
+                padding: const EdgeInsets.only(right: 20),
                 child: const Text(
                   'Crea una cuenta para empezar a usar la app ',
                   textAlign: TextAlign.left,
@@ -62,10 +62,11 @@ class _RegisterState extends State<Register> {
                       color: Colors.grey),
                 ),
               ),
+              SizedBox(height: 35),
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                margin: const EdgeInsets.only(left: 0, right: 288),
+                margin: const EdgeInsets.only(left: 0, right: 277),
                 child: const Text(
                   'Nombre',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -90,8 +91,8 @@ class _RegisterState extends State<Register> {
               ),
               Container(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                margin: const EdgeInsets.only(right: 220, left: 0),
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 0),
+                margin: const EdgeInsets.only(right: 210, left: 0),
                 child: const Text(
                   'Correo electronico',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -116,8 +117,8 @@ class _RegisterState extends State<Register> {
               ),
               Container(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                margin: const EdgeInsets.only(right: 260, left: 0),
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 0),
+                margin: const EdgeInsets.only(right: 255, left: 0),
                 child: const Text(
                   'Contraseña',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
@@ -204,7 +205,7 @@ class _RegisterState extends State<Register> {
                 ),
               ),
               SizedBox(
-                height: 28,
+                height: 80,
               ),
               Container(
                 padding: const EdgeInsets.only(top: 20),

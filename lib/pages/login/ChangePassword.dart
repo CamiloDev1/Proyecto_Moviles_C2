@@ -14,7 +14,7 @@ class ChangePassword extends StatelessWidget {
             },
             icon: Icon(Icons.arrow_back, color: Colors.pinkAccent)),
         automaticallyImplyLeading: false,
-        backgroundColor: Color.fromARGB(255, 85, 18, 124),
+        backgroundColor: Color.fromARGB(255, 97, 23, 194),
         title: Row(
           children: const [
             SizedBox(width: 10),
