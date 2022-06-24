@@ -13,12 +13,15 @@ class _ForgotPasswordState extends State<ForgotPassword> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, 'login');
+            },
+            icon: Icon(Icons.arrow_back, color: Colors.pinkAccent)),
         automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 85, 18, 124),
         title: Row(
           children: const [
-            Icon(Icons.arrow_back, color: Colors.pinkAccent),
-            SizedBox(width: 10),
             Text('Recuperar Contraseña'),
             Spacer(),
             Align(

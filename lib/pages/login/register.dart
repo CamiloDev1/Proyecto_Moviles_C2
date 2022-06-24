@@ -21,12 +21,15 @@ class _RegisterState extends State<Register> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/');
+            },
+            icon: Icon(Icons.arrow_back, color: Colors.pinkAccent)),
         automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 81, 16, 119),
         title: Row(
           children: const [
-            Icon(Icons.arrow_back, color: Colors.pinkAccent),
-            SizedBox(width: 10),
             Text('Registrate'),
             Spacer(),
             Align(

@@ -8,11 +8,15 @@ class ChangePassword extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, 'fortgot_password');
+            },
+            icon: Icon(Icons.arrow_back, color: Colors.pinkAccent)),
         automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 85, 18, 124),
         title: Row(
           children: const [
-            Icon(Icons.arrow_back, color: Colors.pinkAccent),
             SizedBox(width: 10),
             Text('Recuperar contraseña'),
             Spacer(),
